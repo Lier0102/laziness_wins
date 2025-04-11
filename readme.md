@@ -1,6 +1,6 @@
 # 대충하는 공부
 
-1. dreamhack, system_hacking 분야 lv.1 문제 올클(1달 이내)
+1. pwnable_lv_1_100제
 
 2. 드림핵 말고 다른 곳에서 자료 제대로 찾기
 
