@@ -21,7 +21,7 @@ for position in range(1, max_length + 1):
             index = response.text.index(required_char)
             ei = response.text.find(")")
             if index != -1:
-                print(f"31337 Won : {response.text[index:ei].replace('&#39;', " ")}")
+                print(f"31337 Won : {response.text[index:ei].replace('&#39;', "")}")
             else:
                 print('패치당했네;;')
             break
