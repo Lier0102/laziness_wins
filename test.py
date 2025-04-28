@@ -3,7 +3,7 @@ import string
 
 url = "http://kairoshk.ddns.net:9090/level3"
 
-charset = string.ascii_lowercase + string.digits
+charset = string.ascii_lowercase + string.ascii_uppercase + string.digits
 
 password = ""
 max_length = 256
