@@ -1,22 +1,17 @@
-#include <stdio.h>
+#include<stdio.h>
 
 int main(void) {
-    int a[10] = {10, 8, 6, 3, 9, 5, 4, 2, 1, 7};
-    int tmp;
 
-    for (int i = 0; i < 10; i++) {
-        for (int j = 0; j < 10 - (i+1); j++) {
-            if (a[j] > a[j+1]) {
-                tmp = a[j];
-                a[j] = a[j+1];
-                a[j+1] = tmp;
-            }
-        }
-    }
+	int a, b, c, d, e;
+	int min_h, min_d;
 
-    for (int i = 0; i < 10; i++) {
-        printf("%d ", a[i]);
-    }
+	scanf("%d %d %d %d %d",&a,&b,&c,&d,&e);
 
-    return 0;
+	min_h = (a < b) ? a : b;
+	min_h = (min_h < c) ? min_h : c;
+
+	min_d = (d < e) ? d : e;
+
+	printf("%d", (min_h + min_d) - 50);
+        return 0; 
 }
