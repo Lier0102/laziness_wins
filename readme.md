@@ -1,4 +1,4 @@
-# 대충하는 공부
+# 귀차니즘이_승리한다_
 
 1. pwnable_lv_1_100제
 
@@ -10,5 +10,4 @@
 
 5. 1년동안 이곳에 ctf 문제만 주구장창 풀어서 기록 남기기
 
-6. 음지가 되.
-
+6. DID YOU Fking know that programming is the best Fking way to test your Fking Patience?
