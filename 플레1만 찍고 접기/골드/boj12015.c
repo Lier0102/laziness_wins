@@ -6,10 +6,9 @@
 int n;
 int dp[1000001];
 int arr[1000001];
-int len;
 
 int f1();
-int f_l();
+int f_l(int, int);
 
 int main() {
     // int arr[1000001] = {0,};
@@ -36,26 +35,39 @@ int main() {
     for (int i = 1; i <= n; i++) {
         scanf("%d", &arr[i]);
     }
-    printf("%d\n", len);
+    printf("%d\n", f1());
 
     return 0;
 }
 
 int f1() {
-    len = 0;
+    int len = 0;
     for (int i = 1; i <= n; i++) {
         if (dp[len] < arr[i]) {
             dp[++len] = arr[i];
         } else {
-            int lower = f_l();
+            int lower = f_l(len, arr[i]);
             dp[lower] = arr[i];
-
         }
     }
+    return len;
 }
 
-int f_l(int start, int casted) {
-    
+int f_l(int end, int casted) {
+    int S = 0;
+    int m = 0, res = end;
+    int E = end;
+
+    while(S <= E) { // 순회(0->end)
+        m = (S + E) / 2;
+        if (dp[m] >= casted) {
+            E = m - 1;
+            res = m;
+        } else {
+            S = m + 1;
+        }
+    }
+    return res;
 }
 
 // testcases
