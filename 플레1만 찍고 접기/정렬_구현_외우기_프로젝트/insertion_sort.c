@@ -7,7 +7,7 @@ int main() {
     
     scanf("%d", &n); // So you have an input!
 
-    init((void **)&arr, INT, n, 0);
+    init((void **)&arr, 9, n, 0);
     if (arr == NULL) { puts("Fucked up ! ! "); return 31337; } // ah, yes, 31337. the sexy number is here.
 
     for (int i = 0; i < n; i++) {

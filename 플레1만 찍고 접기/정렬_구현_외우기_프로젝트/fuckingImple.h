@@ -14,7 +14,7 @@
 
 // line---
 
-typedef unsigned long long ull; // why Did i...?
+typedef unsigned long long ull; // why Did I...?
 typedef long long ll;
 
 void print_a(const void *a, long long int opt, unsigned long long int size) {
@@ -31,7 +31,7 @@ void print_a(const void *a, long long int opt, unsigned long long int size) {
 
         default:
             puts("Usage: print_a(target, option, size)");
-            break;
+            exit(0);
     }
 }
 
@@ -59,8 +59,8 @@ void init(void **a, int opt, unsigned long long int size, int value) {
             break;
 
         default:
-            puts("Usage: init(target, option, size, value)\t<make sure not to use signed(that contains '-') integer as size!!>");
-            break;
+            puts("Usage: init(target, option, size, value)\t< make sure not to use signed(that contains '-') integer as size!! >");
+            exit(0);
     }
 
 }
